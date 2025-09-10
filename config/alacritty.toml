@@ -12,6 +12,10 @@ startup_mode = "Windowed"
 title = "Alacritty"
 decorations_theme_variant="Dark"
 
+[terminal.shell]
+program = "/bin/zsh"
+args = ["-c", "tmux new-session -A -s alacritty && exec $SHELL"]
+
 [font]
 normal = { family = "0xProto Nerd Font Mono", style = "Regular" }
 bold = { family = "0xProto Nerd Font Mono", style = "Bold" }
@@ -38,3 +42,5 @@ hide_when_typing = true
 bindings = [
   { key = "N", mods = "Control|Shift", action = "CreateNewWindow" }
 ]
+
+[terminal]
