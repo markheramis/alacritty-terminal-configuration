@@ -1,0 +1,40 @@
+[general]
+working_directory = "None"
+live_config_reload = true
+
+[window]
+dimensions = { columns = 80, lines = 24 }
+padding = { x = 5, y = 5 }
+decorations = "Full"
+opacity = 0.8
+blur = true
+startup_mode = "Windowed"
+title = "Alacritty"
+decorations_theme_variant="Dark"
+
+[font]
+normal = { family = "0xProto Nerd Font Mono", style = "Regular" }
+bold = { family = "0xProto Nerd Font Mono", style = "Bold" }
+italic = { family = "0xProto Nerd Font Mono", style = "Italic" }
+bold_italic = { family = "0xProto Nerd Font Mono", style = "Bold Italic" }
+size = 10
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[colors]
+[colors.primary]
+foreground = "#d8d8d8"
+background = "#181818"
+
+[cursor]
+style = { shape = "Block", blinking = "Off" }
+
+[mouse]
+hide_when_typing = true
+
+[keyboard]
+bindings = [
+  { key = "N", mods = "Control|Shift", action = "CreateNewWindow" }
+]
